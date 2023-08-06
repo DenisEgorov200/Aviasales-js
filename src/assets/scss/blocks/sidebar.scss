@@ -31,6 +31,12 @@
     cursor: pointer;
     transition: 0.2s;
 
+    font-family: $mainFont;
+    color: $primaryColor;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+
     &:hover {
       background: $hoverColor;
     }
@@ -39,7 +45,6 @@
   &__checkbox {
     position: absolute;
     z-index: 2;
-    left: 0;
     width: 20px;
     height: 20px;
     opacity: 0;
@@ -52,6 +57,7 @@
     width: 20px;
     height: 20px;
     border: 1px solid $blueColor;
+    border-radius: 2px;
     cursor: pointer;
     margin: 0 10px 0 0;
 
@@ -64,12 +70,12 @@
       display: block;
       width: 10px;
       height: 10px;
-      background: $blackColor;
+      background: $blueColor;
       opacity: 0;
     }
   }
 
-  .sidebar__checkbox:checked + .sidebar__checkmark {
+  &__checkbox:checked + &__checkmark::before {
     opacity: 1;
   }
 }
