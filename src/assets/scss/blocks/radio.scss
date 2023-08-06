@@ -1,0 +1,44 @@
+.radio {
+  display: flex;
+  align-items: center;
+
+  &__button {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+
+    label {
+      font-family: $mainFont;
+      color: $primaryColor;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    & + label {
+      padding: 15px;
+      cursor: pointer;
+      border: 1px solid $borderColor;
+      background-color: $whiteColor;
+
+      margin-right: -1px;
+
+      &:first-of-type {
+        border-radius: 0.7em 0 0 0.7em;
+      }
+
+      &:last-of-type {
+        border-radius: 0 0.7em 0.7em 0;
+      }
+    }
+
+    &:checked + label {
+      color: $whiteColor;
+      background-color: $blueColor;
+      border: 1px solid transparent;
+    }
+  }
+}
