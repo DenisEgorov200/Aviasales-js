@@ -1,0 +1,50 @@
+$primaryColor: #616161;
+$blueColor: #e8eaf5;
+$greyColor: #999999;
+$whiteColor: #fff;
+$blackColor: #000;
+$greenColor: #2ba89c;
+
+$mobile-width: 768px;
+$tablet-width: 1024px;
+
+$mainFont: "Open Sans", sans-serif;
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px 10px;
+  background: $greyColor;
+  color: $whiteColor;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  font-weight: 700;
+
+  &:hover {
+    background: lighten($greyColor, 10);
+  }
+
+  &__green {
+    background: $greenColor;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+      background: darken($greenColor, 10);
+    }
+  }
+}
+
+.input {
+  padding: 5px 10px;
+  border: 1px solid $greyColor;
+  border-radius: 5px;
+}
