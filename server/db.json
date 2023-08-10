@@ -47,14 +47,14 @@
         {
           "origin": "MOW",
           "destination": "KZN",
-          "date": "2023-01-10T08:00+03",
+          "date": "2023-01-10T08:00:00Z",
           "stops": [],
           "duration": "180"
         },
         {
           "origin": "KZN",
           "destination": "MOW",
-          "date": "2023-01-15T16:30+03",
+          "date": "2023-01-15T16:30:00Z",
           "stops": ["LED", "OVB"],
           "duration": "210"
         }
