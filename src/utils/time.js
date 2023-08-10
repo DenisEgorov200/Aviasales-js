@@ -2,12 +2,13 @@ export const time = (time, duration) => {
   const departureDate = new Date(time);
   const arrivalDate = new Date(time);
 
-  const hours = departureDate.getUTCHours();
-  const minutes = (departureDate % 60).toString().padStart(2, '0');
+  const hours = departureDate.getUTCHours().toString().padStart(2, '0');
+  const minutes = departureDate.getUTCMinutes().toString().padStart(2, '0');
 
-  arrivalDate.setMinutes(arrivalDate.getMinutes() + duration);
-  const updHours = arrivalDate.getUTCHours();
-  const updMinutes = (arrivalDate % 60).toString().padStart(2, '0');
+  arrivalDate.setTime(arrivalDate.getTime() + duration * 60000);
+
+  const updHours = arrivalDate.getUTCHours().toString().padStart(2, '0');
+  const updMinutes = arrivalDate.getUTCMinutes().toString().padStart(2, '0');
 
   return `${hours}:${minutes} - ${updHours}:${updMinutes}`;
 };

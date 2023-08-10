@@ -27,8 +27,14 @@ export const displayTickets = (tickets) => {
                   <p class="ticket__subtitle">${duration(segment.duration)}</p>
                 </div>
                 <div class="ticket__item">
-                  <span class="ticket__title">${segment.stops.length} Пересадка</span>
-                  <p class="ticket__subtitle">${segment.stops}</p>
+                  ${
+                    segment.stops.length
+                      ? `
+                      <span class="ticket__title">${segment.stops.length} Пересадка</span>
+                      <p class="ticket__subtitle">${segment.stops}</p>
+                      `
+                      : `<span class="ticket__title">Нет пересадок</span>`
+                  }
                 </div>`,
               )
               .join('')}
