@@ -1,0 +1,64 @@
+{
+  "tickets": [
+    {
+      "price": 5000,
+      "carrier": "S7",
+      "segments": [
+        {
+          "origin": "MOW",
+          "destination": "LED",
+          "date": "2022-12-01T10:00:00Z",
+          "stops": ["KZN"],
+          "duration": 120
+        },
+        {
+          "origin": "LED",
+          "destination": "MOW",
+          "date": "2022-12-05T14:30:00Z",
+          "stops": [],
+          "duration": 90
+        }
+      ]
+    },
+    {
+      "price": 7000,
+      "carrier": "Aeroflot",
+      "segments": [
+        {
+          "origin": "LED",
+          "destination": "MOW",
+          "date": "2022-11-20T12:00:00Z",
+          "stops": [],
+          "duration": 120
+        },
+        {
+          "origin": "MOW",
+          "destination": "LED",
+          "date": "2022-11-25T14:30:00Z",
+          "stops": ["KZN"],
+          "duration": 150
+        }
+      ]
+    },
+    {
+      "price": 8000,
+      "carrier": "Pobeda",
+      "segments": [
+        {
+          "origin": "MOW",
+          "destination": "KZN",
+          "date": "2023-01-10T08:00+03",
+          "stops": [],
+          "duration": "180"
+        },
+        {
+          "origin": "KZN",
+          "destination": "MOW",
+          "date": "2023-01-15T16:30+03",
+          "stops": ["LED", "OVB"],
+          "duration": "210"
+        }
+      ]
+    }
+  ]
+}
