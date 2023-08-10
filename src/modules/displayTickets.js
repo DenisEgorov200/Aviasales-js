@@ -1,3 +1,5 @@
+import { duration } from '@/utils/duration.js';
+
 const ticketList = document.querySelector('.tickets__list');
 
 export const displayTickets = (tickets) => {
@@ -23,7 +25,7 @@ export const displayTickets = (tickets) => {
                 </div>
                 <div class="ticket__item">
                   <span class="ticket__title">В пути</span>
-                  <p class="ticket__subtitle">${segment.duration}</p>
+                  <p class="ticket__subtitle">${duration(segment.duration)}</p>
                 </div>
                 <div class="ticket__item">
                   <span class="ticket__title">${segment.stops.length} Пересадка</span>
