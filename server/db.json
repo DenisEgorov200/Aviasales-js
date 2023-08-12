@@ -3,6 +3,7 @@
     {
       "price": 5000,
       "carrier": "S7",
+      "duration": 210,
       "segments": [
         {
           "origin": "MOW",
@@ -23,6 +24,7 @@
     {
       "price": 7000,
       "carrier": "Aeroflot",
+      "duration": 270,
       "segments": [
         {
           "origin": "LED",
@@ -43,20 +45,168 @@
     {
       "price": 8000,
       "carrier": "Pobeda",
+      "duration": 390,
       "segments": [
         {
           "origin": "MOW",
           "destination": "KZN",
           "date": "2023-01-10T08:00:00Z",
           "stops": [],
-          "duration": "180"
+          "duration": 180
         },
         {
           "origin": "KZN",
           "destination": "MOW",
           "date": "2023-01-15T16:30:00Z",
           "stops": ["LED", "OVB"],
-          "duration": "210"
+          "duration": 210
+        }
+      ]
+    },
+    {
+      "price": 5500,
+      "carrier": "Ural Airlines",
+      "duration": 210,
+      "segments": [
+        {
+          "origin": "SVX",
+          "destination": "MOW",
+          "date": "2022-12-15T09:30:00Z",
+          "stops": [],
+          "duration": 120
+        },
+        {
+          "origin": "MOW",
+          "destination": "SVX",
+          "date": "2022-12-20T12:00:00Z",
+          "stops": [],
+          "duration": 90
+        }
+      ]
+    },
+    {
+      "price": 6500,
+      "carrier": "Air France",
+      "duration": 270,
+      "segments": [
+        {
+          "origin": "CDG",
+          "destination": "LED",
+          "date": "2022-11-10T15:00:00Z",
+          "stops": [],
+          "duration": 120
+        },
+        {
+          "origin": "LED",
+          "destination": "CDG",
+          "date": "2022-11-15T18:30:00Z",
+          "stops": ["FRA"],
+          "duration": 150
+        }
+      ]
+    },
+    {
+      "price": 4500,
+      "carrier": "Turkish Airlines",
+      "duration": 330,
+      "segments": [
+        {
+          "origin": "IST",
+          "destination": "LED",
+          "date": "2022-12-10T08:00:00Z",
+          "stops": [],
+          "duration": 180
+        },
+        {
+          "origin": "LED",
+          "destination": "IST",
+          "date": "2022-12-15T14:30:00Z",
+          "stops": [],
+          "duration": 150
+        }
+      ]
+    },
+    {
+      "price": 7500,
+      "carrier": "Lufthansa",
+      "duration": 270,
+      "segments": [
+        {
+          "origin": "FRA",
+          "destination": "MOW",
+          "date": "2023-01-10T10:00:00Z",
+          "stops": [],
+          "duration": 120
+        },
+        {
+          "origin": "MOW",
+          "destination": "FRA",
+          "date": "2023-01-15T16:30:00Z",
+          "stops": [],
+          "duration": 150
+        }
+      ]
+    },
+    {
+      "price": 6000,
+      "carrier": "British Airways",
+      "duration": 210,
+      "segments": [
+        {
+          "origin": "LHR",
+          "destination": "MOW",
+          "date": "2023-02-01T12:00:00Z",
+          "stops": ["AMS"],
+          "duration": 120
+        },
+        {
+          "origin": "MOW",
+          "destination": "LHR",
+          "date": "2023-02-05T14:30:00Z",
+          "stops": [],
+          "duration": 90
+        }
+      ]
+    },
+    {
+      "price": 8500,
+      "carrier": "Emirates",
+      "duration": 330,
+      "segments": [
+        {
+          "origin": "DXB",
+          "destination": "MOW",
+          "date": "2023-03-10T08:00:00Z",
+          "stops": [],
+          "duration": 180
+        },
+        {
+          "origin": "MOW",
+          "destination": "DXB",
+          "date": "2023-03-15T16:30:00Z",
+          "stops": [],
+          "duration": 150
+        }
+      ]
+    },
+    {
+      "price": 4000,
+      "carrier": "Qatar Airways",
+      "duration": 210,
+      "segments": [
+        {
+          "origin": "DOH",
+          "destination": "LED",
+          "date": "2023-04-10T12:00:00Z",
+          "stops": [],
+          "duration": 120
+        },
+        {
+          "origin": "LED",
+          "destination": "DOH",
+          "date": "2023-04-15T14:30:00Z",
+          "stops": [],
+          "duration": 90
         }
       ]
     }
