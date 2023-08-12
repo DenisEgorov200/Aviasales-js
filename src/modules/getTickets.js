@@ -3,9 +3,14 @@ import { displayTickets } from 'components/displayTickets.js';
 
 export const getTickets = async (option) => {
   let URL = `http://localhost:3000/tickets${option ? `?_sort=${option}&_order=asc` : ''}`;
-  const res = await ky.get(URL).json();
 
-  displayTickets(res);
+  try {
+    const res = await ky.get(URL).json();
+
+    displayTickets(res);
+  } catch (error) {
+    console.log(error.message);
+  }
 };
 
-getTickets();
+window.addEventListener('load', getTickets);
