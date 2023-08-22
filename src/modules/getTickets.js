@@ -1,16 +1,11 @@
 import ky from 'ky';
-import { displayTickets } from 'components/displayTickets.js';
 
-export const getTickets = async (option) => {
-  let URL = `http://localhost:3000/tickets${option ? `?_sort=${option}&_order=asc` : ''}`;
+export const getTickets = async (option, page = 1) => {
+  const URL = `http://localhost:3000/tickets?_page=${page}&_limit=5`;
 
   try {
-    const res = await ky.get(URL).json();
-
-    displayTickets(res);
+    return await ky.get(URL).json();
   } catch (error) {
     console.log(error.message);
   }
 };
-
-window.addEventListener('load', getTickets);

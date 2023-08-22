@@ -1,5 +1,3 @@
-import { getTickets } from 'components/getTickets.js';
-
 const radio = document.querySelector('.radio');
 
 radio.addEventListener('click', (e) => {
@@ -9,6 +7,5 @@ radio.addEventListener('click', (e) => {
 
   if (!radio.contains(radioButton)) return;
 
-  getTickets(radioButton.value);
   console.log(radioButton.value);
 });
